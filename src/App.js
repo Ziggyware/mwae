@@ -8,9 +8,11 @@ function App() {
   const [tokenPrice, setTokenPrice] = useState(0);
   const [balance, setBalance] = useState(0);
 
+
   useEffect(() => {
     initializeContract();
-  }, []);
+  });
+  
 
   async function initializeContract() {
     try {
