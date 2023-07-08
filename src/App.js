@@ -10,12 +10,12 @@ const App = () => {
   useEffect(() => {
     const alchemy = new Alchemy({ apiKey: alchemyAPIKey });
 
-    const getLatestBlock = async () => {
+    const fetchLatestBlock = async () => {
       const blockNumber = await alchemy.core.getBlockNumber();
       setLatestBlock(blockNumber);
     };
 
-    getLatestBlock();
+    fetchLatestBlock();
   }, []);
 
   return (
