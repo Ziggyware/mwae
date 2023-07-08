@@ -8,9 +8,7 @@
 ./.aider.tags.cache.v1
 ./.aider.chat.history.md
 ./.aider.input.history
-.aider.ident.cache.v1/cache.db
-.aider.ident.cache.v1/cache.db
-
+./.aider.tags.cache.v1/cache.db
 
 # testing
 /coverage
