@@ -73,3 +73,6 @@
 
 # 2023-07-07 22:07:24.349068
 +/ls
+
+# 2023-07-07 22:19:25.889681
++integrate web3 js into src\app.js so as to implement the functionality of contracts\combined.sol
