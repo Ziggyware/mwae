@@ -4,8 +4,6 @@
 /node_modules
 /.pnp
 .pnp.js
-/.aider.tags.cache.v1
-/.aider.ident.cache.v1
 
 # testing
 /coverage
