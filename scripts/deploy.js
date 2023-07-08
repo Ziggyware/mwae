@@ -1,5 +1,5 @@
 async function main() {
-    const zimoFactory = await ethers.getContractFactory("ZillennialMemeopolis")
+    const zimoFactory = await ethers.getContractFactory("MemeWarApocalypseEdition")
   
     // Start deployment, returning a promise that resolves to a contract object
     const zimoContract = await zimoFactory.deploy()

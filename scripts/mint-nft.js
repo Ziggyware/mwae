@@ -6,7 +6,7 @@ const PRIVATE_KEY = process.env.PRIVATE_KEY
 const { createAlchemyWeb3 } = require("@alch/alchemy-web3")
 const web3 = createAlchemyWeb3(API_URL)
 
-const contract = require("../artifacts/contracts/ZillennialMemeopolis.sol/ZillennialMemeopolis.json")
+const contract = require("../artifacts/contracts/MemeWarApocalypseEdition.sol/MemeWarApocalypseEdition.json")
 const contractAddress = "0xd8E59418206026b0Fe6A14F205422B27A84BBDa0"
 const nftContract = new web3.eth.Contract(contract.abi, contractAddress)
 

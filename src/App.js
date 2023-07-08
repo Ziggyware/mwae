@@ -1,5 +1,51 @@
 import React, { useState } from 'react';
 
+
+/*
+basic structure of solidity code contained within /contracts/combined.sol
+
+contract Auction is Ownable, ReentrancyGuard
+{
+    event AuctionStarted(uint256 tokenId, uint256 endTime, uint256 buyItNowPrice);
+    event BidReceived(uint256 tokenId, address bidder, uint256 amount);
+    event AuctionEnded(uint256 tokenId, address winner, uint256 amount);
+
+    constructor(address payable creator)
+    function end(uint256 tokenId) public onlyOwner nonReentrant
+    function start(uint256 tokenId, uint256 duration, uint256 buyItNowPrice) public onlyOwner nonReentrant
+    function bid(uint256 tokenId) public payable nonReentrant
+    function getHighestBid(uint256 tokenId) public view returns(uint256)
+    function getHighestBidder(uint256 tokenId) public view returns(address)
+    function getAuctionEndTime(uint256 tokenId) public view returns(uint256)
+    function getBuyItNowPrice(uint256 tokenId) public view returns(uint256)
+    function getCreator() public view returns(address)
+    function getBalance() public view returns(uint256)
+    function withdrawContractBalance() public onlyOwner
+    function withdraw() public onlyOwner
+    receive() external payable {}
+    function getTokenPrice(uint256 tokenId) public view returns(uint256)
+    function getTokenOwner(uint256 tokenId) public view returns(address)
+    function getTokenAuctionEndTime(uint256 tokenId) public view returns(uint256)
+    function getTokenAuctionEnded(uint256 tokenId) public view returns(bool)
+    function getTokenBuyItNowPrice(uint256 tokenId) public view returns(uint256)
+    function getTokenCreatorFee(uint256 tokenId) public view returns(uint256)
+}
+contract MemeWarApocalypseEdition is ERC721URIStorage, Ownable, ReentrancyGuard
+{
+    constructor(address payable _auction) ERC721("MemeWarApocalypseEdition", "MWAE")
+    function mintNFT(address recipient, string memory tokenURI, string memory metadataURI) public onlyOwner
+    function _setMetadataURI(uint256 tokenId, string memory metadataURI) internal virtual
+    function tokenMetadataURI(uint256 tokenId) public view virtual returns (string memory)
+    function startAuction(uint256 tokenId, uint256 duration, uint256 buyItNowPrice) public nonReentrant
+    function bid(uint256 tokenId) public payable nonReentrant
+    function endAuction(uint256 tokenId) public nonReentrant
+    function withdrawAuctionFunds() public onlyOwner
+    function withdrawFunds() public onlyOwner
+    function getContractBalance() public view returns (uint256)
+    function getTokenPrice(uint256 tokenId) public view returns (uint256)
+}
+*/
+
 function App() {
   const [nftData, setNftData] = useState([]);
 
