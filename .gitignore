@@ -11,7 +11,11 @@
 ./.aider.tags.cache.v1/cache.db
 .aider.ident.cache.v1/cache.db
 .aider.tags.cache.v1/cache.db
-
+./contracts/Auction.sol
+./contracts/ZillennialMemeopolis.sol
+./contracts/ZillennialMemeopolis2.sol
+./contracts/ZillennialMemeopolis3.sol
+./contracts/ZillennialMemeopolis4.sol
 # testing
 /coverage
 
