@@ -85,3 +85,6 @@
 
 # 2023-07-07 22:36:25.454980
 +/drop .aider.ident.cache.v1
+
+# 2023-07-07 22:36:44.630730
++integrate web3 js into src\app.js so as to implement the functionality of contracts\combined.sol
