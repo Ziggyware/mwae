@@ -91,3 +91,6 @@
 
 # 2023-07-07 22:49:48.482276
 +git commit
+
+# 2023-07-08 00:19:49.751693
++integrate web3 js into src\app.js so as to implement the functionality of contracts\combined.sol
