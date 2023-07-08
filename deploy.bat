@@ -1,0 +1,1 @@
+npx hardhat --network "polygon_mainnet" run scripts/deploy.js
